@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:id="@+id/parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+    <include layout="@layout/head"/>
+
+    <include layout="@layout/line_horizontal_full"/>
+
+    <EditText
+        android:id="@+id/client_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/gray_coner"
+        android:gravity="left|top"
+        android:hint="欢迎您的评价，我们会做得更好！"
+        android:inputType="textMultiLine"
+        android:minLines="20"
+        android:padding="25px"
+        android:singleLine="true"
+        android:textSize="55px"/>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_submit"
+        android:layout_width="900px"
+        android:layout_height="150px"
+        android:layout_marginTop="150px"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/class_color3"
+        card_view:cardCornerRadius="40px"
+        card_view:cardElevation="8px"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_score_head"
+                style="@style/itemCrawler"
+                android:layout_width="wrap_content"
+                android:text="提交"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

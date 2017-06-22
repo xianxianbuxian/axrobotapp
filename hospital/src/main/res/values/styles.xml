@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <!--<item name="android:actionBarSize">46dp</item>-->
+    </style>
+
+
+    <style name="itemCrawler">
+        <item name="android:layout_width">262px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:textColor">@color/colorBlackFont</item>
+        <item name="android:textSize">45px</item>
+    </style>
+    <style name="ivMainTabBottom">
+        <item name="android:layout_width">80px</item>
+        <item name="android:layout_height">80px</item>
+        <item name="android:layout_marginTop">5px</item>
+        <item name="android:layout_marginBottom">5px</item>
+    </style>
+    <style name="ivMainTabImg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">450px</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="homeFrgText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/colorQQBlue</item>
+    </style>
+    <style name="homeCardView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+</resources>

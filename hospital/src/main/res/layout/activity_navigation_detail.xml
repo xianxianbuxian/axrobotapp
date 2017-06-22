@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                            android:id="@+id/card_view"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:clickable="true"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            card_view:cardBackgroundColor="@color/anti1"
+                                            card_view:cardCornerRadius="25px"
+                                            card_view:cardElevation="8px"
+                                            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/itemCrawler"
+                    android:layout_width="wrap_content"
+                    android:text="自动导诊"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="傻瓜式导航，带您轻松看完病"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:clickable="true"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            card_view:cardBackgroundColor="@color/anti1"
+                                            card_view:cardCornerRadius="25px"
+                                            card_view:cardElevation="8px"
+                                            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/itemCrawler"
+                    android:layout_width="wrap_content"
+                    android:text="自主导诊"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="想去哪，就去哪"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:clickable="true"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            card_view:cardBackgroundColor="@color/anti1"
+                                            card_view:cardCornerRadius="25px"
+                                            card_view:cardElevation="8px"
+                                            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/itemCrawler"
+                    android:layout_width="wrap_content"
+                    android:text="我要去医院"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="地图导诊，让您第一时间到达医院"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <!--<ImageView-->
+        <!--style="@style/ivMainTabImg"-->
+        <!--android:id="@+id/ivHome"-->
+
+        <!--android:src="@drawable/btn_home_action_1_select"/>-->
+
+        <!--<ImageView-->
+        <!--style="@style/ivMainTabImg"-->
+        <!--android:id="@+id/ivHospital"-->
+
+        <!--android:src="@drawable/btn_home_action_2_select"/>-->
+
+        <!--<ImageView-->
+        <!--style="@style/ivMainTabImg"-->
+
+        <!--android:src="@drawable/btn_home_action_3_select"/>-->
+
+        <!--<ImageView-->
+        <!--style="@style/ivMainTabImg"-->
+
+        <!--android:src="@drawable/btn_home_action_4_select"/>-->
+
+        <LinearLayout
+            android:id="@+id/layout_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_jiayingzi"
+                style="@style/ivMainTabBottom"
+
+                android:src="@mipmap/ic_launcher"/>
+
+
+            <TextView
+                android:id="@+id/tv_jiayingzi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="挂号"
+                android:textColor="@color/colorGrayFont"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tool"
+                style="@style/ivMainTabBottom"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/tv_tool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="导诊"
+                android:textColor="@color/colorGrayFont"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_discover"
+                style="@style/ivMainTabBottom"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/tv_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="个人中心"
+                android:textColor="@color/colorGrayFont"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

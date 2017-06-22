@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/head"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50px"
+        android:orientation="vertical">
+
+        <include layout="@layout/line_horizontal_full"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="6楼"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:id="@+id/tv_six"
+                android:layout_height="match_parent"/>
+
+            <include layout="@layout/line_vertical_full"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="5楼"
+                android:textSize="25sp"
+                android:id="@+id/tv_five"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <include layout="@layout/line_horizontal_full"/>        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="4楼"                android:textSize="25sp"
+                android:id="@+id/tv_four"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+
+            <include layout="@layout/line_vertical_full"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="3楼"                android:textSize="25sp"
+                android:id="@+id/tv_there"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <include layout="@layout/line_horizontal_full"/>        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="2楼"                android:textSize="25sp"
+                android:id="@+id/tv_second"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+
+            <include layout="@layout/line_vertical_full"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tv_first"
+                android:text="1楼"                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <include layout="@layout/line_horizontal_full"/>
+
+    </LinearLayout>
+</LinearLayout>

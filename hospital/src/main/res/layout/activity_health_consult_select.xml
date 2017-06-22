@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/head"/>
+    <!--<com.zone.jiayingzi.Weidge.ProgressWebView-->
+    <!--android:id="@+id/wv_stu_dir"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"></com.zone.jiayingzi.Weidge.ProgressWebView>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:text="请选择疾病症状"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_height="50dp"/>
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/lrv_health"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+    </com.github.jdsjlzx.recyclerview.LRecyclerView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="120dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="上一题"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:id="@+id/tv_last_page"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="1/3"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:id="@+id/tv_page"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="下一题"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:id="@+id/tv_next_page"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+</LinearLayout>

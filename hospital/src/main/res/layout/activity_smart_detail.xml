@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/head"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_home"
+            android:layout_width="150px"
+            android:layout_height="450px"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:foreground="?attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@color/colorTransparencyPin"
+            card_view:cardCornerRadius="25px"
+            card_view:cardElevation="25px"
+            android:alpha="160"
+            card_view:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/homeFrgText"
+                    android:ems="1"
+                    android:text="主页"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:text="概述"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorPrimary2"/>
+
+                <TextView
+                    android:id="@+id/tv_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="@drawable/gray_coner"
+                    android:textSize="25dp"
+                    android:padding="30px"
+                    android:text="        脑卒中（Stroke）是脑中风的学名，是一种突然起病的脑血液循环障碍性疾病。又叫脑血管意外。是指在脑血管疾病的病人，因各种诱发因素引起脑内动脉狭窄，闭塞或破裂，而造成急性脑血液循环障碍，临床上表现为一过性或永久性脑功能障碍的症状和体征．脑卒中分为缺血性脑卒中和出血性脑卒中。
+
+"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:textSize="30dp"
+                    android:text="科室"
+
+                    android:textColor="@color/colorPrimary2"/>
+
+                <TextView
+                    android:id="@+id/tv_apartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="@drawable/gray_coner"
+                    android:padding="30px"
+                    android:textSize="25dp"
+                    android:text="神经内科"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:textSize="30dp"
+                    android:text="病因描述"
+
+                    android:textColor="@color/colorPrimary2"/>
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="@drawable/gray_coner"
+                    android:padding="30px"
+                    android:textSize="25dp"
+                    android:text="脑卒中分缺血性和出血性。 (一)主要病因有： 1、缺血性脑卒中：颈内动脉和椎动脉狭窄或闭塞。 2、出血性脑卒中：出血是因粟粒状微动脉破裂所致，随出血量增多形成血肿。 (二)主要诱因有： 1、高血压病，无论是出血性中风还是缺血性中风，高血压是最主要的独立危险因素。 2、糖尿病。 3、心脏疾病，如风湿性心脏病、冠心病。尤其防止心房颤动引起栓子脱落造成脑栓塞。 4、血脂代谢紊乱，极低密度脂蛋白、低密度脂蛋白是引起动脉粥样硬化的最主要脂蛋白，高密度脂蛋白是抗动脉硬化脂蛋白。 5、短暂性脑缺血发作（TIA），TIA本身是缺血性中风分类的一个类型，也可以是脑梗塞的先兆或前区症状，应及时治疗。 6、吸烟与酗酒； 7、血液流变学紊乱，特别是全血黏度增加时脑血流量下降，其中红细胞比积增高和纤维蛋白原水平增高是缺血性中风的主要危险因素； 8、肥胖，肥胖与超重均为缺血性中风的危险因素，与出血性中风无关。 9、 年龄和性别，年龄是动脉粥样硬化的重要危险因素，粥样硬化程度随年龄增高而增加。50岁以上随着年龄增加中风发病率亦有增加，但笔者发现青中年中风发病者亦有增加，不可忽视。一般来说女性中风发病率低于男性。"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+</LinearLayout>

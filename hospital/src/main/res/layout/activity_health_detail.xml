@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/head"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_home"
+        android:layout_width="200px"
+        android:layout_height="450px"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/colorTransparencyPin"
+        card_view:cardCornerRadius="25px"
+        card_view:cardElevation="25px"
+        android:alpha="160"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                style="@style/homeFrgText"
+                android:ems="1"
+                android:text="主页"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:text="概述"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorPrimary2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:textSize="25dp"
+                    android:background="@drawable/gray_coner"
+                    android:padding="30px"
+                    android:text="感冒，总体上分为普通感冒和流行感冒。普通感冒，祖国医学称“伤风“，是由多种病毒引起的一种呼吸道常见病，其中30%-50%是由某种血清型的鼻病毒引起；普通感冒虽多发于初冬，但任何季节，如春天，夏天也可发生，不同季节的感冒的致病病毒并非完全一样。流行性感冒，是由流感病毒引起的急性呼吸道传染病。病毒存在于病人的呼吸道中，在病人咳嗽，打喷嚏时经飞沫传染给别人。我国北方常在冬季发病，南方常在冬夏季发病。流感的传染性很强，由于这种病毒容易变异，即使是患过流感的人，当下次再遇上流感流行，他仍然会感染，所以流感容易引起暴发性流行。"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:textSize="30dp"
+                    android:text="科室"
+
+                    android:textColor="@color/colorPrimary2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="@drawable/gray_coner"
+                    android:padding="30px"
+                    android:textSize="25dp"
+                    android:text="呼吸内科"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:textSize="30dp"
+                    android:text="病因描述"
+
+                    android:textColor="@color/colorPrimary2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="@drawable/gray_coner"
+                    android:padding="30px"
+                    android:textSize="25dp"
+                    android:text="急性上呼吸道感染约有70%-80%由病毒引起。主要有流感病毒(甲、乙、丙)、副流感病毒、呼吸道合胞病毒、腺病毒、鼻病毒、埃可病毒、柯萨奇病毒、麻疹病毒、风疹病毒。细菌感染可直接或继病毒感染之后发生，以溶血性链球菌为多见，其次为流感嗜血杆菌、肺炎球菌和葡萄球菌等。偶见革兰阴性杆菌。其感染的主要表现为鼻炎、咽喉炎或扁桃腺炎。当有受凉、淋雨、过度疲劳等诱发因素，使全身或呼吸道局部防御功能降低时，原已存在于上呼吸道或从外界侵入的病毒或细菌可迅速繁殖，引起发病，尤其是老幼体弱或有慢性呼吸道疾病如鼻旁窦炎、扁桃体炎者，更易罹病。 鼻腔及咽粘膜充血、水肿、上皮细胞破坏，少量单核细胞浸润，有浆液性及粘液性炎性渗出。继发细菌感染后，有中性粒细胞浸润，大量脓性分泌物。"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+</LinearLayout>

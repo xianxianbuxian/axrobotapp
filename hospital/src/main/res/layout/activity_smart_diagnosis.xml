@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    >
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@mipmap/bg_man_body_up"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--</RelativeLayout>-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_return"
+                android:layout_width="120px"
+                android:layout_height="300px"
+                android:layout_gravity="center_vertical"
+                android:alpha="160"
+
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardBackgroundColor="@color/colorTransparencyPin"
+                card_view:cardCornerRadius="10px"
+                card_view:cardElevation="25px"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/homeFrgText"
+                        android:text="返回"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="120px"
+                android:layout_height="100px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:text="点击选择"
+                 />
+            <!--android:background="@drawable/bg_sex_man"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:text="男或者女" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_up"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_man_body_up"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/flashPoit"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!--132-->
+                <com.zone.hospital.weidge.FlashPoit
+                    android:id="@+id/tv_up_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.zone.hospital.weidge.FlashPoit
+                    android:id="@+id/tv_up_left_arm"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp" />
+
+
+                <com.zone.hospital.weidge.FlashPoit
+                    android:id="@+id/tv_up_back"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="90dp" />
+
+                <com.zone.hospital.weidge.FlashPoit
+
+                    android:id="@+id/tv_up_right_arm"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <com.zone.hospital.weidge.FlashPoit
+                    android:id="@+id/tv_up_left_hand"
+                    android:layout_width="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <com.zone.hospital.weidge.FlashPoit
+                    android:id="@+id/tv_up_left_pap"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_up_right_pap"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <com.zone.hospital.weidge.FlashPoit
+                    android:id="@+id/tv_up_right_hand"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+
+                <com.zone.hospital.weidge.FlashPoit
+                    android:id="@+id/tv_up_left_leg"
+                    android:layout_width="55dp"
+                    android:layout_marginLeft="210dp"
+                    android:layout_height="match_parent" />
+
+                <com.zone.hospital.weidge.FlashPoit
+                    android:id="@+id/tv_up_right_leg"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="90dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="622dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="175dp"
+                    android:orientation="vertical">
+
+                    <com.zone.hospital.weidge.FlashPoit
+                        android:id="@+id/tv_up_left_foot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="35dp"
+                         android:layout_marginTop="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="185dp"
+                    android:orientation="vertical">
+
+                    <com.zone.hospital.weidge.FlashPoit
+                        android:id="@+id/tv_up_right_foot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_down"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@mipmap/bg_man_body_down"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--132-->
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_left_arm"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"/>
+
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_back"
+                android:layout_width="75dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="110dp"
+                android:layout_height="match_parent"/>
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_right_arm"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+             android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_left_hand"
+                android:layout_width="45dp"
+
+                android:layout_marginLeft="50dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_left_pap"
+                android:layout_width="55dp"
+
+                android:layout_height="match_parent"/>
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:layout_marginLeft="30dp"
+                android:id="@+id/tv_down_right_pap"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_right_hand"
+                android:layout_width="45dp"
+
+                android:layout_marginRight="50dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_left_leg"
+                android:layout_width="55dp"
+                android:layout_marginRight="60dp"
+                android:layout_height="match_parent"/>
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_right_leg"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_left_foot"
+                android:layout_width="35dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="180dp"
+                android:layout_height="match_parent"/>
+
+            <com.zone.hospital.weidge.FlashPoit
+                android:id="@+id/tv_down_right_foot"
+                android:layout_width="35dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
